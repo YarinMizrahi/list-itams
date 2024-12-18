@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- LOGIN SECTION -->
+    <section id="login-section">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required autocomplete="username"><br>
+            <input type="password" id="password" placeholder="Password" required autocomplete="current-password">
+            <button type="submit" id="login-btn">Login</button>
+        </form>
+        <p id="show-register-btn"><button>Register</button></p>
+    </section>
+
+    <!-- REGISTRATION SECTION -->
+    <section id="register-section" style="display: none;">
+        <h2>Register</h2>
+        <form id="register-form">
+            <input type="text" id="new-username" placeholder="Choose a Username" required autocomplete="new-username"><br>
+            <input type="password" id="new-password" placeholder="Choose a Password" required autocomplete="new-password">
+            <button type="submit" id="create-account-btn">Create Account</button>
+        </form>
+        <p id="show-login-btn"><button>Login</button></p>
+    </section>
+
+    <!-- INVENTORY DASHBOARD -->
+    <section id="dashboard" style="display: none;">
+        <h2>Inventory Dashboard</h2>
+        <button id="logout-btn">Logout</button>
+        <button id="add-item-btn">Add New Item</button>
+        <table id="inventory-table">
+            <thead>
+                <tr>
+                    <th>img</th>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Status</th>
+                    <th>Price</th>
+                    <th>Total Cost</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>

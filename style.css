@@ -1,0 +1,268 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #000000; /* Dark black background */
+    color: #ffffff; /* White text for readability */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Headings */
+h2 {
+    color: #0040ff; /* Warm orange heading */
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(50, 129, 165, 0.8);
+}
+
+/* Buttons */
+button {
+    background-color: #378181; /* Warm orange */
+    color: #121212; /* Dark text on button */
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Neon blue glow */
+}
+
+button:hover {
+    background-color: #008cff; /* Lighter orange on hover */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 1);
+    transform: scale(1.05); /* Slight hover effect */
+}
+
+/* Forms */
+form {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border: 2px solid #000000; /* Warm orange border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Neon blue glow */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #000000; /* Orange underline */
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #00ffff; /* Light blue neon focus */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #1f1f1f; /* Dark grey background for table */
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3); /* Light blue glow */
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #444;
+    vertical-align: middle; /* Ensures vertical alignment of text */
+}
+
+/* Set fixed column widths to ensure proper alignment */
+th:nth-child(1), td:nth-child(1) {
+    width: 10%;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 30%;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 10%;
+}
+
+th:nth-child(4), td:nth-child(4) {
+    width: 10%;
+}
+
+th:nth-child(5), td:nth-child(5) {
+    width: 10%;
+}
+
+th:nth-child(6), td:nth-child(6) {
+    width: 15%;
+}
+
+th:nth-child(7), td:nth-child(7) {
+    width: 15%;
+}
+
+/* Header Styling */
+th {
+    background-color: #0008ff; /* Warm orange for table headers */
+    color: #121212;
+    font-size: 18px;
+}
+
+td {
+    background-color: #2a2a2a; /* Slightly lighter grey */
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #333333; /* Zebra striping */
+}
+
+tr:hover {
+    background-color: #444444;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Restock Alert Highlight */
+tr.low-stock {
+    background-color: #b22222; /* Red color for restock alert */
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
+
+/* Adjust table layout and images */
+#inventory-table img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover; /* Ensures images are properly resized */
+}
+
+/* Optional Adjustments for Responsive Design */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* Neon Box Styling */
+#dashboard, #login-section, #register-section {
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #929191;
+    border: 2px solid #00ffff; /* Neon blue border */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7); /* Neon glow */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Restock Alert Highlight */
+tr.low-stock {
+    background-color: #b22222; /* Red color for restock alert */
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
+
+/* Style for language selector */
+#language-selector {
+    font-size: 14px;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for buttons in forms */
+button {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #10bedd; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000; /* Darker green when hovered */
+}
+
+/* Style for login and register sections */
+#login-section, #register-section {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-section h2, #register-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#username, #password, #new-username, #new-password {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#username:focus, #password:focus, #new-username:focus, #new-password:focus {
+    border-color: #002fff;
+    outline: none;
+}
+
+/* Style for the inventory dashboard */
+#dashboard {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#inventory-table td, #inventory-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#inventory-table th {
+    background-color: #0fc7df;
+    color: white;
+}
+
+#inventory-table img {
+    border-radius: 5px;
+}
+
+
